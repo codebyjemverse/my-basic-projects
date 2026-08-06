@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="style.css" />
+      <title>Simple Input Form</title>
+
+      <!-- This code handles how to get inputs from radio button and checkboxes.
+      This is the same as the student grade system but I added more line of code. -->
+   </head>
+   <body>
+      <form>
+         <label for="fullName">Full Name:</label>
+         <input type="text" id="fullName" /><br />
+
+         <label for="email">Email:</label>
+         <input type="text" id="email" /><br />
+
+         <label for="password">Password:</label>
+         <input type="password" id="password" /><br />
+
+         <label>Gender:</label><br />
+         <input type="radio" name="gender" id="male" value="Male" />
+         <label for="male">Male</label>
+
+         <input type="radio" name="gender" id="female" value="Female" />
+         <label for="female">Female</label>
+
+         <input type="radio" name="gender" id="others" value="Others" />
+         <label for="others">Others</label><br />
+
+         <label>Interests:</label><br />
+         <input type="checkbox" name="interests" id="reading" value="Reading Wattpad Books" />
+         <label for="reading">Reading Wattpad Books</label><br />
+
+         <input type="checkbox" name="interests" id="studying" value="Studying" />
+         <label for="studying">Studying</label><br />
+
+         <input type="checkbox" name="interests" id="playing" value="Playing Online Games" />
+         <label for="playing">Playing Online Games</label><br />
+
+         <button type="submit" class="submit">Submit</button>
+         <button type="reset" class="reset">Clear</button>
+      </form>
+
+      <table id="output-table">
+         <thead>
+            <tr>
+               <th>Name</th>
+               <th>Address</th>
+               <th>Gender</th>
+               <th>Interests</th>
+               <th>Action</th>
+            </tr>
+         </thead>
+         <tbody></tbody>
+      </table>
+
+      <script src="index.js"></script>
+   </body>
+</html>
