@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="style.css" />
+      <title>Student Grade Management System</title>
+
+      <!-- This is just a basic of handling forms data and how to display it,
+      some of the code from the js file is ai and i practice it and know what their purpose is, 
+      i also added some few lines of code-->
+   </head>
+   <body>
+      <div class="container">
+         <header>
+            <!-- HERO SECTION -->
+            <section class="hero-section">
+               <h1 class="hero-heading">Student Grade Management System</h1>
+            </section>
+         </header>
+
+         <main>
+            <!-- FORM SECTION-->
+            <section class="form-section">
+               <form>
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" /><br />
+
+                  <label for="grade">Grade:</label>
+                  <input type="text" id="grade" /><br />
+
+                  <div class="gender-container">
+                     <label>Gender:</label>
+                     <input type="radio" name="gender" id="male" value="Male" />
+                     <label for="male">Male</label>
+
+                     <input type="radio" name="gender" id="female" value="Female" />
+                     <label for="female">Female</label>
+                  </div>
+
+                  <button type="submit">Submit</button>
+                  <button type="reset">Clear</button>
+               </form>
+            </section>
+
+            <!-- DISPLAY TABLE SECTION-->
+            <section class="table-section">
+               <table id="output-table">
+                  <thead>
+                     <tr>
+                        <th>Name</th>
+                        <th>Grade</th>
+                        <th>Remarks</th>
+                        <th>Gender</th>
+                        <th>Action</th>
+                     </tr>
+                  </thead>
+                  <tbody></tbody>
+               </table>
+            </section>
+         </main>
+      </div>
+      <script src="app.js"></script>
+   </body>
+</html>
