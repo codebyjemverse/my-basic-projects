@@ -1,0 +1,43 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   max-width: 1200px;
+   width: 90%;
+   margin: 0 auto;
+}
+
+form {
+   margin-top: 2.5rem;
+   background-color: lightgoldenrodyellow;
+   padding: 20px 30px;
+   border-radius: 20px;
+}
+
+input {
+   padding: 5px 10px;
+   border: none;
+   border-radius: 8px;
+   margin-bottom: 12.5px;
+}
+
+button {
+   padding: 5px;
+   width: 100px;
+   border: none;
+   border-radius: 8px;
+   cursor: pointer;
+   color: white;
+   margin-top: 1rem;
+}
+
+.submit {
+   background-color: green;
+}
+
+.reset {
+   background-color: red;
+}
