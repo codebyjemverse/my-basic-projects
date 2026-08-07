@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="style.css" />
+      <title>Employee Management System</title>
+      <!-- This is a practice for handling form and
+      storing it to a localstorage and then  displaying it
+      and how to delete a specific row for the table. -->
+   </head>
+   <body>
+      <div class="container">
+         <div class="form">
+            <form>
+               <label for="name">Name:</label>
+               <input type="text" id="name" /><br />
+
+               <label for="idNumber">ID Number:</label>
+               <input type="text" id="idNumber" /><br />
+
+               <label for="position">Position:</label>
+               <input type="text" id="position" /><br />
+
+               <label for="salary">Salary:</label>
+               <input type="text" id="salary" /><br />
+
+               <button type="submit">Add Employee</button>
+               <button type="reset">Clear</button>
+            </form>
+         </div>
+
+         <div class="output">
+            <table id="display-table">
+               <thead>
+                  <tr>
+                     <th>Name</th>
+                     <th>ID Number</th>
+                     <th>Position</th>
+                     <th>Salary</th>
+                     <th>Action</th>
+                  </tr>
+               </thead>
+               <tbody></tbody>
+            </table>
+         </div>
+      </div>
+      <script src="script.js"></script>
+   </body>
+</html>
