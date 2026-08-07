@@ -137,3 +137,11 @@ th:nth-child(5) {
    color: white;
    text-align: center;
 }
+
+#submit {
+   background-color: rgba(0, 128, 0, 0.741);
+}
+
+#clear {
+   background-color: rgba(255, 0, 0, 0.614);
+}
