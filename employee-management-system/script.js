@@ -2,20 +2,20 @@ const form = document.querySelector("form");
 const outputTable = document.querySelector("#display-table tbody");
 
 function displayData() {
-   const existingEntries = JSON.parse(localStorage.getItem("personsSetLists")) || [];
+   const existingEntries = JSON.parse(localStorage.getItem("employeeSetLists")) || [];
 
    outputTable.innerHTML = "";
 
-   existingEntries.forEach((person) => {
+   existingEntries.forEach((employee) => {
       const row = document.createElement("tr");
 
       row.innerHTML = `
-      <td>${person.name}</td>
-      <td>${person.idNumber}</td>
-      <td>${person.position}</td>
-      <td>${person.salary}</td>
+      <td>${employee.name}</td>
+      <td>${employee.idNumber}</td>
+      <td>${employee.position}</td>
+      <td>${employee.salary}</td>
       <td>
-         <button onclick="deletePerson(${person.id})">Delete</button>
+         <button onclick="deleteEmployee(${employee.id})">Delete</button>
       </td>
       `;
 
@@ -23,12 +23,12 @@ function displayData() {
    });
 }
 
-function deletePerson(id) {
-   const existingEntries = JSON.parse(localStorage.getItem("personsSetLists")) || [];
+function deleteEmployee(id) {
+   const existingEntries = JSON.parse(localStorage.getItem("employeeSetLists")) || [];
 
-   const entriesUpdated = existingEntries.filter((person) => person.id !== id);
+   const entriesUpdated = existingEntries.filter((employee) => employee.id !== id);
 
-   localStorage.setItem("personsSetLists", JSON.stringify(entriesUpdated));
+   localStorage.setItem("employeeSetLists", JSON.stringify(entriesUpdated));
 
    displayData();
 }
@@ -55,11 +55,11 @@ form.addEventListener("submit", function (e) {
       salary: salary,
    };
 
-   const existingEntries = JSON.parse(localStorage.getItem("personsSetLists")) || [];
+   const existingEntries = JSON.parse(localStorage.getItem("employeeSetLists")) || [];
 
    existingEntries.push(newEntry);
 
-   localStorage.setItem("personsSetLists", JSON.stringify(existingEntries));
+   localStorage.setItem("employeeSetLists", JSON.stringify(existingEntries));
 
    form.reset();
    displayData();
