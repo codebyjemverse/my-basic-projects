@@ -64,7 +64,7 @@ form.addEventListener("submit", function (e) {
    <td>${selectedGender}</td>
    <td>${selectedInterests.join(", ")}</td>
    <td>
-   <button id="delete-btn">Delete</button>
+      <button id="delete-btn">Delete</button>
    </td>
    `;
 
